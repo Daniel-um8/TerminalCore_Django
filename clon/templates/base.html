@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Mi Proyecto Django
+      {% endblock %}
+    </title>
+
+    <link rel="icon" href="{% static 'icons/icon.ico' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  </head>
+
+  <body>
+    {% include 'includes/navbar.html' %}
+
+    <main>
+      {% block content %}
+        <!-- El contenido de cada página específica se insertará aquí -->
+      {% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+    {% comment %} Ayúdame agregando el código para cargar mi script respetando el formato para Django {% endcomment %}
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

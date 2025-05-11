@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  StreamBy | API & Services
+{% endblock %}
+
+{% block content %}
+
+  <section class="seccion-clara seccion1 max-width">
+    <div class="seccion1-div1">
+      <div class="logo">
+        <img class="icon-img" src="{% static 'img/streamby-icon.svg' %}" alt="logo2" />
+      </div>
+      <h1>Share your multimedia files</h1>
+      <p>Store and manage files for your web projects</p>
+      <div class="botones1">
+        <button class="boton1">Try Free</button>
+        <button class="boton2">Documentation</button>
+      </div>
+    </div>
+
+    <div class="imageContainer">
+      <img class="imagen1" src="{% static 'img/landing-image.jpg' %}" alt="pag" />
+    </div>
+  </section>
+
+  <section class="seccion-oscura seccion2">
+    <ul class="ul2 max-width">
+      <h2>Enhancing the experience of yours Apps</h2>
+      <p>Improve the performance and multimedia accessibility of your web projects</p>
+    </ul>
+  </section>
+
+  <section class="seccion-clara seccion3 max-width">
+    <span>
+      <h1>WHAT CAN I DO?</h1>
+      <p>You can manage your store and...</p>
+    </span>
+
+    <ul class="ul3">
+      <li class="lista1">
+        <article class="articulo1"></article>
+      </li>
+      <li class="lista1">
+        <article class="articulo1"></article>
+      </li>
+      <li class="lista1">
+        <article class="articulo1"></article>
+      </li>
+    </ul>
+
+    <span class="span1"><button class="boton1">Get started</button></span>
+  </section>
+
+  <section class="seccion-oscura seccion4">
+    <div class="seccion4-div1 max-width">
+      <span>
+        <h2>Start development...</h2>
+        <p>Checkout our documentation for API references and libraries</p>
+      </span>
+
+      <ul class="ul4">
+        <li class="lista1">
+          <article class="articulo2"></article>
+        </li>
+        <li class="lista1">
+          <article class="articulo2"></article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion-cliente">
+    <div class="seccion4-div1 max-width">
+      <h1>OUR CLIENTS</h1>
+    </div>
+  </section>
+{% endblock %}
